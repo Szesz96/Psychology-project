@@ -1,1 +1,28 @@
+:root{
+    --main-color: rgb(181, 247, 247);
+}
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color)
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items ul li {
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--main-color);
+}
