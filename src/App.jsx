@@ -5,6 +5,7 @@ import Blog from './views/Blog'
 import FindPsychologist from './views/FindPsychologist'
 import ErrorSite from './views/ErrorSite'
 import Help from './views/Help';
+import React from 'react';
 function App() {
   return (
     <Routes>
