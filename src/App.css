@@ -2,6 +2,14 @@
     --main-color: rgb(181, 247, 247);
 }
 
+body {
+    width: 100vw;
+}
+
+body > div {
+    min-height: 100vh;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -22,7 +30,29 @@
 .footer {
     text-align: center;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: var(--main-color);
+}
+
+
+.section-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.about {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.section-video {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-video {
+    width: 500px;
+    height: 300px;
 }

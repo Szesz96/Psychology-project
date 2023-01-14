@@ -21,8 +21,8 @@ const Navbar = () => {
                 <Link to='/help'>
                     <li>Pomoc</li>
                 </Link>
-                <Link>
-                    <li>Lorem</li>
+                <Link to='/relax'>
+                    <li>Relax</li>
                 </Link>
             </ul>
         </div>
