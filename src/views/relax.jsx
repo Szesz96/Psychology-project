@@ -11,12 +11,10 @@ import Movement from "../components/movement"
 function Relax () {
     return (
         <>
-        <Navbar />
         <Affirmations />
         <Meditation />
         <Mindfulness />
         <Movement />
-        <Footer />
         </>
     )
 }

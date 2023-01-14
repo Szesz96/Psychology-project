@@ -5,9 +5,7 @@ import Navbar from '../components/Navbar'
 const FindPsychologist = () => {
   return (
     <>
-      <Navbar />
       <h1>Znajdź psychologa</h1>
-      <Footer />
     </>
   )
 }
