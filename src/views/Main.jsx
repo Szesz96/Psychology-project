@@ -5,8 +5,7 @@ import Footer from '../components/Footer'
 const Main = () => {
   return (
     <>
-      <Navbar />
-      <Footer />
+      
     </>
   )
 }
