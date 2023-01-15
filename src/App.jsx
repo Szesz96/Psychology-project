@@ -7,8 +7,8 @@ import ErrorSite from './views/ErrorSite'
 import Help from './views/Help';
 import Relax from './views/relax'
 import React from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 function App() {
   return (
 
