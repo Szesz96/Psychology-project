@@ -1,44 +1,14 @@
 :root{
-    --main-color: rgb(181, 247, 247);
+    --main-color: rgb(239, 228, 142);
     font-family: 'Lato', sans-serif;
 }
 
 body {
-    width: 100vw;
+    width: 100%;
 }
 
 body > div {
     min-height: 100vh;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--main-color);
-}
-
-.nav-items ul {
-    list-style: none;
-    display: flex;
-}
-
-.nav-items ul li a{
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-}
-
-.nav-items ul li a:hover {
-    font-weight: bold;
-}
-
-.footer {
-    text-align: center;
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    background-color: var(--main-color);
 }
 
 

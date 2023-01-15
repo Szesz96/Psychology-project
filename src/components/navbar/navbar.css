@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    
+}
+
+.logo {
+    background-image: url(../../img/logo/LogoMakr-2c1AmM.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items ul li a:hover {
+    font-weight: bold;
+}
