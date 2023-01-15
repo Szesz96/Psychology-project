@@ -22,7 +22,15 @@ div.about {
 .mind-box {
     width: 500px;
     height: 300px;
-    border: 1px solid cyan;
+    border: 1px solid #7fdbff;
     border-radius: 5px;
     display: inline-block;
 }
+
+.mind-title {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+
