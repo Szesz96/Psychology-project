@@ -5,7 +5,7 @@ import Blog from './views/Blog'
 import FindPsychologist from './views/FindPsychologist'
 import ErrorSite from './views/ErrorSite'
 import Help from './views/Help';
-import Relax from './views/relax'
+import Relax from './views/relax/relax'
 import React from 'react';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';

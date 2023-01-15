@@ -1,6 +1,17 @@
 .section-title {
     text-align: center;
     text-decoration: underline;
+    font-weight: 700;
+    border-top: 2px solid #7fdbff;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.section-title-aff {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 div.about {
@@ -19,12 +30,18 @@ div.about {
     height: 300px;
 }
 
+
+.mind-section {
+    display: flex;
+    justify-content: space-around;
+}
+
 .mind-box {
     width: 500px;
-    height: 300px;
+    height: 200px;
     border: 1px solid #7fdbff;
     border-radius: 5px;
-    display: inline-block;
+    text-align: center;
 }
 
 .mind-title {
