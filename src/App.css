@@ -23,9 +23,14 @@ body > div {
     display: flex;
 }
 
-.nav-items ul li {
+.nav-items ul li a{
     padding: 10px 20px;
     text-decoration: none;
+    color: black;
+}
+
+.nav-items ul li a:hover {
+    font-weight: bold;
 }
 
 .footer {
