@@ -1,10 +1,10 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
-import Main from './views/Main'
-import Blog from './views/Blog'
-import FindPsychologist from './views/FindPsychologist'
-import ErrorSite from './views/ErrorSite'
-import Help from './views/Help';
+import Main from './views/main/main'
+import Blog from './views/blog/blog'
+import FindPsychologist from './views/find/findPsychologist'
+import ErrorSite from './views/error/errorSite'
+import Help from './views/help/help';
 import Relax from './views/relax/relax'
 import React from 'react';
 import Navbar from './components/navbar/navbar';
