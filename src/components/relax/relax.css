@@ -1,0 +1,28 @@
+.section-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.about {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.section-video {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-video {
+    width: 500px;
+    height: 300px;
+}
+
+.mind-box {
+    width: 500px;
+    height: 300px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    display: inline-block;
+}
