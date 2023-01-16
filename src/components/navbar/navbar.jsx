@@ -9,19 +9,19 @@ const Navbar = () => {
         <div className="nav-items">
             <ul>
                 <li>
-                    <Link to='/'>Strona główna</Link>
+                    <Link className='link' to='/'>Strona główna</Link>
                 </li>
                 <li>
-                    <Link to='/blog'>Blog</Link>
+                    <Link className='link' to='/blog'>Blog</Link>
                 </li>
                 <li>
-                    <Link to='/findpsychologist'>Psycholog</Link>
+                    <Link className='link' to='/findpsychologist'>Psycholog</Link>
                 </li>
                 <li>
-                    <Link to='/help'>Pomoc</Link>
+                    <Link className='link' to='/help'>Pomoc</Link>
                 </li>
                 <li>
-                    <Link to='/relax'>Relax</Link>
+                    <Link className='link' to='/relax'>Relax</Link>
                 </li>
             </ul>
         </div>

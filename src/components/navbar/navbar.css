@@ -20,12 +20,43 @@
     display: flex;
 }
 
-.nav-items ul li a{
+.nav-items ul li {
+    margin: 0 10px;
+    transition: font-weight .3s;
+}
+
+.nav-items ul li .link {
+    position: relative;
     padding: 10px 20px;
     text-decoration: none;
     color: black;
+    transition: font-weight .3s;
 }
 
-.nav-items ul li a:hover {
-    font-weight: bold;
+.link:focus {
+    outline: none;
+}
+.link,
+.link::after {
+	transition: 0.3s;
+}
+
+
+.link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	transition: transform 0.3s;
+	transform: scaleX(0);
+	transform-origin: right;
+}
+
+.link:hover::after, .link:focus::after {
+	transform: scaleX(1);
+    height: 3px;
+	transform-origin: left;
 }
