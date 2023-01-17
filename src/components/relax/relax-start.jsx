@@ -4,6 +4,7 @@ import Photo from "./catalin-pop-noydSJIWMSg-unsplash.jpg"
 
 function Start () {
     return (
+        <>
         <div className="main-photo-container">
             <img className="main-photo-single" src={Photo} />
             <div className="about-relax">
@@ -11,6 +12,8 @@ function Start () {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores in laudantium, nihil vero distinctio veritatis amet expedita commodi sint impedit quis dolorem nostrum possimus quidem, quibusdam iure obcaecati assumenda rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores in laudantium, nihil vero distinctio veritatis amet expedita commodi sint impedit quis dolorem nostrum possimus quidem, quibusdam iure obcaecati assumenda rerum.</p>
             </div>
         </div>
+        <hr className="break-between"/>
+        </>
     );
 }
 

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .section-title {
     text-align: center;
     text-decoration: underline;
@@ -53,20 +57,54 @@ div.about {
 .main-photo-container {
     display: flex;
     align-items: center;
-    max-height: 60vh;
+    height: 60vh;
 
 }
 .main-photo-single {
-    padding: 40px;
+    padding: 30px 40px;
     height: 50vh;
 }
 
 
 .about-relax {
-    padding-left: 10px;
+    margin-left: 10px;
     padding-right: 40px;
+    padding-bottom: 40px;
     max-height: 40vh;
     font-size: 25px;
+}
+
+.break-between {
+    max-width: 60vw;
+    size: 5px;
+}
+
+
+.affirmation-button {
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #7fdbff;
+    color: black;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.affirmation-button:hover {
+    background-color: #7fdbff;
+}
+
+.affirmation-result {
+    display: flex;
+    color: black;
+    font-size: 30px;
+    justify-content: center;
+    padding: 20px;
+    
 }
 
 
