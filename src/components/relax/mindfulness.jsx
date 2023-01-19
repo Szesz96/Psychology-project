@@ -22,6 +22,7 @@ function Mindfulness () {
                 <div className="mind-description">Dziecko kładzie się na podłodze i umieszcza na brzuchu maskotkę. Oddychaja w ciszy przez minutę i zauważa przy tym, jak jego mały przyjaciel porusza się w górę i w dół. Stara się też zauważyć wszelkie inne wrażenia. Wyobraża sobie, że myśli, które pojawiają się w  głowie zmieniają się w bańki mydlane i odlatują… </div>
             </div>
             </div>
+            <hr className="break-between"/>
         </>
     );
 }

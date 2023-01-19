@@ -27,6 +27,7 @@ function Affirmations () {
         <button className='affirmation-button' onClick={getAffirmation}>WYLOSUJ AFIRMACJĘ NA DZIŚ</button>
         </div>
         <div className='affirmation-result'>{oneAffirmation}</div>
+        <hr className="break-between"/>
         </>
     );
 }

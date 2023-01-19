@@ -13,6 +13,7 @@ function Meditation () {
             <iframe className="single-video" src="https://www.youtube.com/embed/NX6xjjZBiDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe className="single-video" src="https://www.youtube.com/embed/NX6xjjZBiDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+        <hr className="break-between"/>
         </>
     );
 }
