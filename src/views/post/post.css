@@ -1,0 +1,71 @@
+.post-container,
+.post-element,
+.post-form form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.post-container {
+	display: flex;
+	height: calc(100vh - 102px);
+	justify-content: center;
+	align-items: center;
+	background: rgb(187, 187, 187);
+	background: linear-gradient(
+		rgb(247, 247, 247) 0%,
+		rgb(150, 150, 150) 100%
+	);
+}
+
+.post-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 600px;
+	width: 500px;
+	border-radius: 15px;
+	background-color: var(--main-color);
+    box-shadow: 0 0 20px black;
+}
+
+.post-element {
+    font-weight: bold;
+    font-size: 18px;
+	width: 100%;
+	padding: 20px;
+}
+
+.post-element input {
+    height: 40px;
+}
+
+.post-element textarea,
+.post-element input {
+    background-color: rgb(235, 234, 234);
+    margin: 20px;
+	width: 90%;
+	max-height: 350px;
+	max-width: 450px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.share-btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: rgb(235, 234, 234);
+    margin-top: 20px;
+    transition: background-color .3s;
+}
+
+.share-btn:hover {
+    background-color: white;
+}
+
+.share-btn:focus, .post-element textarea:focus,
+.post-element input:focus {
+    background-color: white;
+}

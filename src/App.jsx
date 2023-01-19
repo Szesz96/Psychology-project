@@ -9,7 +9,7 @@ import Relax from './views/relax/relax'
 import React, { useState } from 'react';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
-import Post from './views/blog-post/post';
+import Post from './views/post/post';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false)

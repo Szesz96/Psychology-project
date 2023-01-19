@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { auth, provider } from '../../firebase-config'
-import { signInWithPopup } from 'firebase/auth'
+import { signInWithPopup, signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 
 function Blog({ setIsAuth }) {
@@ -14,13 +14,19 @@ function Blog({ setIsAuth }) {
     })
   }
 
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear()
+      setIsAuth(false)
+      navigate("/blog")
+    })
+  }
+
   return (
     <>
       <h1>Blog</h1>
-      <p>Zaloguj się za pomocą Google by móc dodawać posty!</p>
-      <button onClick={signIn}>
-        Zaloguj się
-      </button>
+      <p className='paragraph-login'>Zaloguj się za pomocą Google by móc dodawać posty!</p>
+      <button onClick={signIn}>Zaloguj się</button> 
     </>
   )
 }
