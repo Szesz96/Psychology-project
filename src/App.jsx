@@ -11,8 +11,8 @@ import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import Post from './views/post/post';
 
-function App() {
-  const [isAuth, setIsAuth] = useState(false)
+function App({setIsAuth}) {
+  // const [isAuth, setIsAuth] = useState(false)
   return (
 
     <>

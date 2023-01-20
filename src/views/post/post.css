@@ -1,4 +1,4 @@
-.post-container,
+.form-container,
 .post-element,
 .post-form form {
 	display: flex;
@@ -7,7 +7,7 @@
 	align-items: center;
 }
 
-.post-container {
+.form-container {
 	display: flex;
 	height: calc(100vh - 102px);
 	justify-content: center;
@@ -19,7 +19,7 @@
 	);
 }
 
-.post-content {
+.form-content {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
