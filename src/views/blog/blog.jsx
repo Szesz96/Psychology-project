@@ -1,3 +1,4 @@
+import './blog.css'
 import React, { useEffect, useState } from 'react'
 import { auth, provider, dataBase } from '../../firebase-config'
 import { signInWithPopup, signOut } from 'firebase/auth'
@@ -16,6 +17,8 @@ function Blog() {
       const data = await getDocs(postCollectionRef)
       setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
     }
+
+    getPosts()
   })
 
   const deletePost = async (id) => {
@@ -40,8 +43,9 @@ function Blog() {
   }
 
   return (
-    <>
+    <div className='blog-container'>
       <h1>Blog</h1>
+      <p>Pamiętaj, że nie jestes sam. Poniżej znajdziesz artykuły/posty z doświadczeniami innych osób, jeżeli bedziesz miał/a chęć, możesz również podzielić się swoimi odczuciami.</p>
       <div className="blog-page">
         <div className="post-container">
           {postList.map((post) => {
@@ -55,15 +59,19 @@ function Blog() {
                   <p>{post.postText}</p>
                   <h3>@{post.author.name}</h3>
                 </div>
+                
               </div>
+              
             )
           })}
 
         </div>
-        <p className='paragraph-login'>Zaloguj się za pomocą Google by móc dodawać posty!</p>
-        <button onClick={signIn}>Zaloguj się</button> 
+        <div className='bottom'>
+          <p className='paragraph-login'>Zaloguj się za pomocą Google by móc dodawać posty!</p>
+          <button className='login-btn' onClick={signIn}>Zaloguj się</button> 
+        </div>
       </div>
-    </>
+    </div>
   )
 }
 

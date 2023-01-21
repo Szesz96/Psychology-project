@@ -3,12 +3,12 @@ import { getFirestore} from 'firebase/firestore'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDDF_BBzwYQfcQ2odqvhdBP9KjFmVyGdCE",
-  authDomain: "psychologyblog-752c4.firebaseapp.com",
-  projectId: "psychologyblog-752c4",
-  storageBucket: "psychologyblog-752c4.appspot.com",
-  messagingSenderId: "428871997513",
-  appId: "1:428871997513:web:66dae7f8bffabfce914798"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
