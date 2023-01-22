@@ -20,20 +20,25 @@
 div.about {
     padding: 10px 20px;
     display: grid;
-  
 }
 
 
 .section-video {
-    margin: 50px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 
+
 .single-video {
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    max-height: 300px;
+    margin: 10px;
 }
+
+
 
 
 .mind-section {
@@ -99,7 +104,7 @@ div.about {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .affirmation-button:hover {
@@ -136,21 +141,22 @@ div.about {
 
 
 div.about-aff {
-    padding: 10px 20px;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 200px;
      
 }
 
+
 .single-photo {
-    height: 400px;
+    max-height: 500px;
     grid-column-start: 2;
     grid-column-end: 3;
+    padding: 20px;
 }
 
 .text-about {
-    margin-top: 20px;
+    margin: 20px 0px 0px 20px;
     grid-column-start: 3;
     grid-column-end: 5; 
     line-height: 25px;
@@ -158,4 +164,15 @@ div.about-aff {
 
 div.text-about > div {
     margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.meditation-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
 }
