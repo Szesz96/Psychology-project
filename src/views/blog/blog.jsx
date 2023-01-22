@@ -12,18 +12,20 @@ function Blog() {
   const postCollectionRef = collection(dataBase, "posts")
   let navigate = useNavigate()
 
-  useEffect(() => {
-    const getPosts = async () => {
-      const data = await getDocs(postCollectionRef)
-      setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-    }
+  const getPosts = async () => {
+    const data = await getDocs(postCollectionRef)
+    setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+  }
 
+  useEffect(() => {
+    
     getPosts()
-  })
+  }, [])
 
   const deletePost = async (id) => {
     const postDoc = doc(dataBase, "posts", id)
     await deleteDoc(postDoc)
+    await getPosts()
   }
 
   const signIn = () => {
