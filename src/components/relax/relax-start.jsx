@@ -1,7 +1,7 @@
 import React from 'react'
 import './relax.css'
 // import Photo from "./catalin-pop-noydSJIWMSg-unsplash.jpg"
-import { Link } from 'react-router-dom'
+
 
 function Start () {
     return (

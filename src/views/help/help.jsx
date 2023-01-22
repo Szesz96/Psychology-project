@@ -1,9 +1,12 @@
 import React from 'react'
+import FormHelp from '../../components/find-help/form/form'
+import StartHelp from '../../components/find-help/start-help/start-help'
 
 const Help = () => {
   return (
     <>
-        <h1>Poproś o pomoc, nie czekaj!</h1>
+    <StartHelp/>
+    <FormHelp/>  
     </>
   )
 }
