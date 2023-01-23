@@ -1,5 +1,7 @@
 import React from 'react'
 import '../help.css'
+import Photo from './help-about.jpg'
+
 
 
 function StartHelp () {
@@ -9,11 +11,8 @@ function StartHelp () {
         <h1>Szukasz pomocy?</h1>
         </div>
         <div className="help-container">
-            <div className="about-help">
-                <p>Jesteśmy tu po to żeby Tobie pomóc. Jeżeli chcesz poradzić się co zrobić w trudnej dla Ciebie sytuacji napisz do nas. Postaramy się pomóc.</p>
-                <div className="go-to">
-                </div>
-            </div>
+            <img className="single-photo" src={Photo}></img>
+            <div className="text-about">JLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         </div>
         </>
     );

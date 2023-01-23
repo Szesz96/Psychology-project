@@ -17,29 +17,74 @@
 .help-container {
     display: flex;
     align-items: center;
+    margin: 30px 200px;
 }
 
-
-.form {
-    background-color: #7fdbff;
-    max-width: 400px;
-    max-height: 100%;
-    border-radius: 15px;
-    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 36px 24px;
-}
 
 .form-input {
-    position: relative;
-    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input > label {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color:#333;
+    font-weight: 500;
+    margin: 0px 20px;
+}
+
+.form-input > input,
+.form-input > textarea {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px 20px;
+    box-shadow: 1px 4px 19px -11px rgba(66, 68, 90, 0.46);
+} 
+
+.form-input > textarea {
+    height: 70px;
 }
 
 .form-container-help {
-    align-items: center;
-    display: flex;
+   background-color:white;
+   border-radius: 5px;
+   max-width: 400px;
+   margin: 30px auto;
+   box-shadow: -1px 7px 32px -6px rgba(66, 68, 90, 0.46);
+   padding-bottom: 20px;
+}
+
+.form-header {
+    text-decoration: none;
     font-size: 20px;
-    justify-content: center;
-    overflow: hidden;
+    color: white;
+}
+
+.submit-button {
+    display: block;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    padding: 7px 15px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 1px 4px 19px -11px rgba(66, 68, 90, 0.46);
+}
+
+.form-head {
+    background-color: black;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.single-photo {
+    max-width: 400px;
+    padding: 20px;
 }
