@@ -86,5 +86,39 @@
 
 .single-photo {
     max-width: 400px;
+    height: 300px;
     padding: 20px;
+}
+
+.single-photo-psych {
+    max-width: 300px;
+    padding: 20px;
+}
+
+
+.single-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-container {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.text-about-psych {
+    margin: 30px 200px;
+    line-height: 25px;
+    
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
 }
