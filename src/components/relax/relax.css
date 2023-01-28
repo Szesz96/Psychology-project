@@ -38,27 +38,38 @@ div.about {
     margin: 10px;
 }
 
-
-
-
 .mind-section {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+    justify-content: center;
+    margin: 20px 200px;
 }
 
 .mind-box {
-    width: 500px;
-    height: 200px;
-    border: 1px solid #7fdbff;
+    margin: 0 20px 20px 20px; 
+    padding: 30px 40px;
+    width: 30%;
+    border: 1px solid #1e8fbb;
     border-radius: 5px;
     text-align: center;
 }
 
+.mind-box:hover {
+    border: 3px solid #1e8fbb;
+}
+
 .mind-title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 700; 
+}
 
+.mind-title-container {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.mind-description {
+    line-height: 20px;
+    font-size: 16px;
 }
 
 .main-photo {
@@ -136,31 +147,43 @@ div.about {
 
 .direct {
     padding-right: 20px;
+    cursor: pointer;
 }
 
+.direct:hover {
+    text-decoration: underline;
+}
 
 
 div.about-aff {
     display: flex;
-    justify-content: space-between;
-    margin: 10px 200px;
+    justify-content: center;
+    padding: 10px 200px;
      
 }
 
-
 .single-photo {
-    max-height: 500px;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    height: 20%;
     padding: 20px;
 }
 
 .text-about {
-    margin: 20px 0px 0px 20px;
-    grid-column-start: 3;
-    grid-column-end: 5; 
+    width: 50%;
+    margin: 20px 0px 20px 20px;
     line-height: 25px;
 }
+
+.text-about-med {
+    width: 50%;
+    margin: 30px 30px 20px 20px;
+    line-height: 25px;
+}
+
+.text-about-mind {
+    margin: 20px 30px 20px 20px;
+    line-height: 25px;
+}
+
 
 div.text-about > div {
     margin-top: 20px;
