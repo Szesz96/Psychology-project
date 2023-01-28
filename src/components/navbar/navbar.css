@@ -1,46 +1,51 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--main-color);
-    
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: rgb(240, 240, 240);
+	background: linear-gradient(
+		90deg,
+		rgba(240, 240, 240, 1) 35%,
+		rgba(203, 208, 253, 1) 100%
+	);
 }
 
 .logo {
-    background-image: url(../../img/logo/LogoMakr-2c1AmM.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 200px;
-    padding: 10px;
+	background-image: url(../../img/logo/LogoMakr-2c1AmM.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80px;
+	width: 200px;
+	padding: 10px;
 }
 
 .nav-items ul {
-    list-style: none;
-    display: flex;
+	list-style: none;
+	display: flex;
 }
 
 .nav-items ul li {
-    margin: 0 10px;
-    transition: font-weight .3s;
+	margin: 0 10px;
+	transition: font-weight 0.3s;
 }
 
 .nav-items ul li .link {
-    position: relative;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    transition: font-weight .3s;
+	position: relative;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	transition: font-weight 0.3s;
 }
 
 .link:focus {
-    outline: none;
+	outline: none;
 }
 .link,
 .link::after {
 	transition: 0.3s;
 }
-
 
 .link::after {
 	content: '';
@@ -49,14 +54,15 @@
 	left: 0;
 	height: 3px;
 	width: 100%;
-	background-color: black;
+	background-color: var(--second-color);
 	transition: transform 0.3s;
 	transform: scaleX(0);
 	transform-origin: right;
 }
 
-.link:hover::after, .link:focus::after {
+.link:hover::after,
+.link:focus::after {
 	transform: scaleX(1);
-    height: 3px;
+	height: 3px;
 	transform-origin: left;
 }

@@ -4,7 +4,7 @@ import { auth, provider, dataBase } from '../../firebase-config'
 import { signInWithPopup, signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { getDocs, collection, doc, deleteDoc } from "firebase/firestore"
-import { async } from '@firebase/util'
+
 
 function Blog() {
   const [postList, setPostList] = useState([])
@@ -16,7 +16,6 @@ function Blog() {
     const data = await getDocs(postCollectionRef)
     setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
   }
-
   useEffect(() => {
     
     getPosts()
@@ -59,7 +58,9 @@ function Blog() {
                 </div>
                 <div className='post-text'>
                   <p>{post.postText}</p>
-                  <h3>@{post.author.name}</h3>
+                  <div>
+                    <h3>@{post.author.name}</h3>
+                  </div>
                 </div>
                 
               </div>
