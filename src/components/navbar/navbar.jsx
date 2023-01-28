@@ -21,7 +21,7 @@ const Navbar = () => {
                     <Link className='link' to='/help'>Pomoc</Link>
                 </li>
                 <li>
-                    <Link className='link' to='/relax'>Relax</Link>
+                    <Link className='link' to='/relax'>Relaksownik</Link>
                 </li>
             </ul>
         </div>
