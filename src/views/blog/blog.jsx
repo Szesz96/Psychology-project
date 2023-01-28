@@ -45,7 +45,8 @@ function Blog() {
 
   return (
     <div className='blog-container'>
-      <h1>Blog</h1>
+      <h1 className='blog-heading'>Blog</h1>
+      <div className='hr'></div>
       <p>Pamiętaj, że nie jestes sam. Poniżej znajdziesz artykuły/posty z doświadczeniami innych osób, jeżeli bedziesz miał/a chęć, możesz również podzielić się swoimi odczuciami.</p>
       <div className="blog-page">
         <div className="post-container">

@@ -5,21 +5,37 @@ const Main = () => {
 	return (
 		<div className='main-container'>
 			<div className='main-text'>
-				<h1>POZWÓL SOBIE POMÓC!</h1>
-				<div className='hr'></div>
+        <div>
+				  <h1 className='main-heading'>POZWÓL SOBIE POMÓC!</h1>
+				  <div className='hr'></div>
+        </div>
 				<p>
-					Zależy nam na tym, aby wspierać osoby zmagające się z zaburzeniami psychicznymi. Uważamy, że najważniejszym krokiem do odnalezienia spokoju ducha jest uświadomienie sobie, że nie jesteśmy sami. Z powodu zaburzeń psychicznych na całym świecie cierpi 25% społeczeństwa.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore architecto et impedit illo alias expedita aspernatur consectetur ipsum ea perferendis non dolores omnis eius molestiae veniam corporis, animi iste voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum iste dolores vitae soluta ipsum?
 				</p>
-        <div className="disorders-container">
-          <div className="disorders">
-            <p>Depresja</p>
-            <p>Nerwica</p>
-            <p>Zaburzenia osobowości</p>
-            <p>Natręctwa</p>
-            <p>Dwubiegunowość</p>
+        <div className='internal-nav'>
+          <div className='intnav-item one'>
+            <p>Blog</p>
+            <button className='intnav-btn blog-btn'>Poznaj doświadczenia innych
+              <div className='icon'><i class="fa-solid fa-arrow-right"></i></div>
+            </button>
           </div>
-          <div className='disorder-description'>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, architecto?</p>
+          <div className='intnav-item two'>
+            <p>Psycholog</p>
+            <button className='intnav-btn psych-btn'>Znajdź najlepszego specjaliste
+              <div className='icon'><i class="fa-solid fa-arrow-right"></i></div>
+            </button>
+          </div>
+          <div className='intnav-item three'>
+            <p>Pomoc</p>
+            <button className='intnav-btn help-btn'>Poproś nas o pomoc
+              <div className='icon'><i class="fa-solid fa-arrow-right"></i></div>
+            </button>
+          </div>
+          <div className='intnav-item four'>
+            <p>Relax</p>
+            <button className='intnav-btn relax-btn'>Poczuj nareszcie spokój ducha
+              <div className='icon'><i class="fa-solid fa-arrow-right"></i></div>
+            </button>
           </div>
         </div>
 			</div>
